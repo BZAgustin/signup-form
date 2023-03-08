@@ -1,0 +1,51 @@
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+  display: flex;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: dimgray;
+  width: 30vw;
+  height: 100vh;
+}
+
+.background h1 {
+  position: relative;
+  top: 20vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(163, 162, 162);
+  width: 70vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+  gap: 5rem;
+  padding: 6rem 4rem;
+}
+
+fieldset {
+  padding: 2rem;
+}
