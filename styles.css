@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 :root {
   box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body {margin: 0; height: 100%; overflow: hidden}
@@ -13,39 +16,75 @@ body {
   display: flex;
 }
 
+.banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 2rem;
+  top: 20vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+em {
+  color: rgb(252, 200, 121);
+}
+
 .background {
+  background-image: url(./assets/left-background.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: dimgray;
   width: 30vw;
   height: 100vh;
+  color: white;
 }
 
-.background h1 {
-  position: relative;
-  top: 20vh;
-}
-
-.content {
+.right-panel {
+  background-color: #292736;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(163, 162, 162);
   width: 70vw;
   height: 100vh;
+  color: white;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: aquamarine;
   gap: 5rem;
-  padding: 6rem 4rem;
+  padding: 6rem 2rem;
 }
 
 fieldset {
-  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10rem;
+  border: none;
+  padding: 2rem 0rem;
+  width: 70%;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+col {
+  margin: 2rem;
+}
+
+label {
+  display: block;
+  margin: 0.2rem 0;
+}
+
+input {
+  margin-bottom: 1rem;
 }
