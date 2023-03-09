@@ -24,11 +24,11 @@
   <div class="right-panel">
     <div class="wrapper">
       <header>
-        <h3>This is not a real online service! You know you need something like
+        <h2>This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.
-        </h3>
-        <h3>Sign up <em>now</em> to get started.</h2><br>
-        <h3>You <em>know</em> you want to.</h2>
+        </h2>
+        <h2>Sign up <em>now</em> to get started.</h2><br>
+        <h2>You <em>know</em> you want to.</h2>
       </header>
 
       <form action="" method="post">
@@ -43,6 +43,7 @@
 
             <label for="password">PASSWORD</label>
             <input type="password" id="password" class="error">
+            <p id="no-match">*Passwords don't match</p>
           </div>
           
           <div class="col">
@@ -59,12 +60,12 @@
         </fieldset>
 
         <hr>
-        
-        <footer>
-          <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="">Log in</a></p>
-        </footer>
-      </form> 
+      </form>
+      
+      <footer>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="" id="login">Log in</a></p>
+      </footer>
     </div>
   </div>
 </body>
