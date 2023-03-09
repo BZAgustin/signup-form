@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Unbounded&display=swap');
 
 :root {
   box-sizing: border-box;
@@ -17,11 +17,18 @@ body {
 }
 
 .banner {
+  background-color: rgba(41, 39, 54, 0.85);
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   font-size: 2rem;
   top: 20vh;
+  padding: 2rem;
+}
+
+.banner h1 {
+  font-family: 'Unbounded', sans-serif;
 }
 
 a {
@@ -36,10 +43,12 @@ em {
 .background {
   background-image: url(./assets/left-background.jpg);
   background-size: cover;
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  text-align: center;
   width: 30vw;
   height: 100vh;
   color: white;
@@ -50,6 +59,7 @@ em {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: visible;
   width: 70vw;
   height: 100vh;
   color: white;
@@ -58,22 +68,23 @@ em {
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  padding: 6rem 2rem;
+  gap: 3rem;
+  padding: 6rem 4rem;
+  padding-right: 15rem;
 }
 
 fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 10rem;
+  gap: 7rem;
   border: none;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
   width: 70%;
 }
 
 legend {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 col {
@@ -83,8 +94,26 @@ col {
 label {
   display: block;
   margin: 0.2rem 0;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
 }
 
 input {
+  outline: 1px solid rgb(36, 34, 48);
+  background-color: rgb(91, 91, 112);
+  border: 0px #9b9da1;
+  width: 120%;
+  height: 15%;
+  border-radius: 5px;
   margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: 1px solid rgb(255, 132, 50);
+  box-shadow: 3px 3px 5px rgb(31, 31, 31);
+  box-sizing: border-box;
+}
+
+hr {
+  margin-bottom: 2rem;
 }
