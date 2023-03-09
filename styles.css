@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rubik:wght@300&family=Unbounded&display=swap');
 
 :root {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 html, body {margin: 0; height: 100%; overflow: hidden}
@@ -33,7 +33,6 @@ body {
 
 a {
   color: white;
-  text-decoration: none;
 }
 
 em {
@@ -94,10 +93,11 @@ label {
   display: block;
   margin: 0.2rem 0;
   font-size: 0.7rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 input {
+  color: white;
   outline: 1px solid rgb(27, 25, 36);
   background-color: rgb(91, 91, 112);
   border: 0px #9b9da1;
@@ -105,6 +105,8 @@ input {
   height: 18%;
   border-radius: 3px;
   margin-bottom: 1rem;
+  transition: 0.5s;
+  padding-left: 3px;
 }
 
 input:focus {
@@ -118,7 +120,8 @@ hr {
 }
 
 button {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   background-color: rgb(255, 169, 70);
   padding: 1rem;
   width: 30%;
@@ -152,5 +155,6 @@ footer {
 
 #no-match {
   color: rgb(255, 52, 52);
-  font-size: 10px;
+  font-size: 15px;
+  transition: 0.5s;
 }
