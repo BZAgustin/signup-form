@@ -12,15 +12,18 @@ function validatePassword() {
       passwordField.classList.add('error');
       confirmPasswordField.classList.add('error');
       noMatch.style.display = 'block';
+      noMatch.textContent = "*Passwords don't match"
     }
+  } else if (passwordField.value == '' && confirmPasswordField.value == '') {
+    noMatch.textContent = "*Please type in a password"
   }
 }
 
-passwordField.addEventListener('change', (e) => {
+passwordField.addEventListener('keyup', (e) => {
  validatePassword();
 })
 
-confirmPasswordField.addEventListener('change', (e) => {
+confirmPasswordField.addEventListener('keyup', (e) => {
   validatePassword();
 })
 
